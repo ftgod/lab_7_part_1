@@ -1,14 +1,15 @@
 void setup() {
 size(500, 500);
-background(0,0,255);
+
 }
-int x;
-int y;
+int x = 100;
 
 void draw() {
-  fill(255,255,255);
-  ellipse(250,250,100,100);
-  fill(255,255,255);
-  ellipse(250,175,50,50);
-  x = height - y;
+  background(0,0,255);
+  noStroke();
+  ellipse( x+150, 250, 100, 100);
+  ellipse( x+150, 185, 50, 50);
+  ellipse( x+150, 150, 35, 35);
+  if(x==0);
+  x++;
 }
